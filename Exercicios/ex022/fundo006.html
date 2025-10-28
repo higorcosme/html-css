@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
@@ -20,11 +20,19 @@
             independentemente do tamanho da tela.
             */
             background-size: cover;
+            /*
+            Combinando attachment fixed com cover corrige o problema da imagem quebrar em rolagem.
+            */
+            background-attachment: fixed;
+            /*
+             Shorthand de background: color > image > position > repeat > [size] > attachment
+             Exemplo: background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,6 +43,10 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur vel, voluptas exercitationem totam quam libero? Soluta atque illo reiciendis explicabo eum ullam exercitationem vel beatae dolorum deleniti, molestiae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus in pariatur et? Quis blanditiis laudantium explicabo officia dolorum dolor itaque eius repudiandae quam! Omnis rem non accusamus ex voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum aperiam quisquam dolor tempora ipsa id? Dolorem ipsum magni, facilis eligendi dicta, repellendus, quas modi a voluptatem fugiat molestias delectus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur vel, voluptas exercitationem totam quam libero? Soluta atque illo reiciendis explicabo eum ullam exercitationem vel beatae dolorum deleniti, molestiae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus in pariatur et? Quis blanditiis laudantium explicabo officia dolorum dolor itaque eius repudiandae quam! Omnis rem non accusamus ex voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum aperiam quisquam dolor tempora ipsa id? Dolorem ipsum magni, facilis eligendi dicta, repellendus, quas modi a voluptatem fugiat molestias delectus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur vel, voluptas exercitationem totam quam libero? Soluta atque illo reiciendis explicabo eum ullam exercitationem vel beatae dolorum deleniti, molestiae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus in pariatur et? Quis blanditiis laudantium explicabo officia dolorum dolor itaque eius repudiandae quam! Omnis rem non accusamus ex voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum aperiam quisquam dolor tempora ipsa id? Dolorem ipsum magni, facilis eligendi dicta, repellendus, quas modi a voluptatem fugiat molestias delectus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur vel, voluptas exercitationem totam quam libero? Soluta atque illo reiciendis explicabo eum ullam exercitationem vel beatae dolorum deleniti, molestiae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus in pariatur et? Quis blanditiis laudantium explicabo officia dolorum dolor itaque eius repudiandae quam! Omnis rem non accusamus ex voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum aperiam quisquam dolor tempora ipsa id? Dolorem ipsum magni, facilis eligendi dicta, repellendus, quas modi a voluptatem fugiat molestias delectus?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur pariatur vel, voluptas exercitationem totam quam libero? Soluta atque illo reiciendis explicabo eum ullam exercitationem vel beatae dolorum deleniti, molestiae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus in pariatur et? Quis blanditiis laudantium explicabo officia dolorum dolor itaque eius repudiandae quam! Omnis rem non accusamus ex voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum aperiam quisquam dolor tempora ipsa id? Dolorem ipsum magni, facilis eligendi dicta, repellendus, quas modi a voluptatem fugiat molestias delectus?</p>
     </main>
 </body>
