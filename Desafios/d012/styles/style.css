@@ -6,18 +6,20 @@
 }
 
 @font-face {
-    font-family: 'Sriracha';
-    src: url('../fontes/sriracha') format('truetype');
+    font-family: Sriracha;
+    src: url('../fontes/sriracha.ttf') format('truetype');
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -29,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: Passion;
+    font-size: 3em;
 }
 
 header > p {
@@ -50,6 +54,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+
+    font-family: Sriracha;
+    font-size: 3vw;
 }
 
 section > pre {
@@ -67,7 +74,8 @@ section.imagem {
 }
 
 section.imagem > pre {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
